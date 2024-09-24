@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    width: 100%;
+    font-family: "Monserrat", sans-serif;
+   
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 15px 15px;
+    justify-content: center;
+    gap: 370px;
+    font-size: 1.1rem;
+
+    cursor: pointer;
+    text-align: center;
+
+    .marca {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        color: #15407c;
+        font-size: 1.2rem; 
+
+    }
+
+    .encabezado{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        
+        a {
+            color: #10256a; 
+            padding:  5px 17px;
+
+        }
+    }
+
+    
+}
+
+.encabezado a:hover {
+    color:rgb(2, 125, 125);
+    border-bottom: 2px solid darkcyan;
+}
+
+.container-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    gap:50px;
+}
+
+.titulo{
+margin-left: 40px;
+width: 40%;
+
+
+h1 {
+    font-size: 2.7rem;
+    margin-bottom: 15px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 500;
+    width: 80%;
+    margin-top: -100px;
+    text-align: center;
+    white-space: 8px;
+    color: #124d84;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #1e2a3c;
+    font-family: "Monserrat", sans-serif;
+}
+
+h3 {
+    font-size: 1.2rem;
+  
+    color: #1e2a3c;
+    font-family: "Monserrat", sans-serif;
+}
+
+}
+
+
+.container-inicio img {
+    width: 100%;
+    height: 28%;
+    text-align: right;
+    margin-right: 20px;
+ 
+}
+
+.plan {
+    text-align: center;
+    font-size: 1.5rem;
+    color:#15407c;
+    font-weight: bold;
+    margin-top: -60px;
+}
+
+.planes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+        text-align: center;
+        margin-top: 50px 
+        
+
+    }
+
+    div {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
