@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    width: 100%;
+    font-family: "Monserrat", sans-serif;
+    height: auto;
+   
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 15px 15px;
+    justify-content: center;
+    gap: 370px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    background: white;
+
+    .marca {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #15407c;
+        font-size: 1.1rem; 
+
+    }
+
+    .encabezado{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        
+        a {
+            color: #10256a; 
+            padding:  5px 20px;
+
+        }
+    }
+
+    
+}
+
+.encabezado a:hover {
+    color:#027d7d;
+    border-bottom: 2px solid #008b8b;
+}
+
+/*main*/
+
+.container-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:70px;
+    margin-top: 100px;
+    flex-wrap: nowrap;
+}
+
+.titulo{
+margin-left: 100px;
+width: 40%;
+
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    margin-top: -30px;
+    text-align: center;
+    white-space: 8px;
+    color: #124d84;
+}
+
+
+h3 {
+    font-size: 1rem;
+    color: #1b3c62;
+    font-family: "Monserrat", sans-serif;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+}
+
+.titulo button {
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 40px 20%;
+    border: none;
+    background-color: #173250;
+    filter: drop-shadow(5px 5px 5px #8080809c)
+}
+
+.titulo button a {
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+   
+}
+ 
+.titulo button:hover {
+    transform: scale(1.1);
+    border :2px solid #6bf0e9;
+}
+
+
+.container-inicio img {
+    width: 90%;
+    height: 45%;
+    text-align: right;
+   
+ 
+}
+
+.motivos {
+    background-color: #f2f0f0;
+    height: 490px;
+    padding-top: 50px;
+    margin: 0 50px;
+    border-radius: 25px;
+}
+
+.motivos h2 {
+    text-align: center;
+    color: #124d84;
+    margin-bottom: 95px;
+
+    
+}
+
+.lista {
+    display: flex;
+    gap: 70px;
+    font-size: 1.2rem;
+    line-height: 4;
+    color: #173250;
+    justify-content: center;
+    margin-top: -30px;
+    
+   
+        
+    li {
+        display: flex;
+        align-items: center;
+       
+       
+    }
+
+    li img {
+        width: 35px;
+        height: 35px;
+        border-radius: 0;
+        filter: none;
+    }
+    
+}
+
+.motivos img {
+    width: 360px;
+    height: 300px;
+    border-radius: 50px 0 50px 0;
+    filter: drop-shadow(10px 10px 10px #808080b7)
+       
+
+}
+
+.final {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    gap: 50px;
+    justify-content: space-between;
+
+}
+
+.incluir{
+    text-align: center;
+    color: #124d84;
+    margin-top: 110px;
+  
+}
+
+.beneficios,
+.asesoramiento {
+    width: 45%;
+    height: 23vw;
+    border: 2px solid #285eba;
+    border-radius: 13px;
+    position: relative;
+   
+
+}
+
+.final h3 {
+    background-color: #285eba;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 9px 9px 0 0;
+    margin-bottom: 20px;
+}
+
+
+.final button {
+    text-align: center;
+    padding: 10px 15px;
+    bottom: 20px;
+    margin: 0 15vw;
+    position: absolute;
+    border-radius: 5px;
+    border: none;
+    background: #204a91;
+    
+}
+
+.final button a {
+    color: white;
+    font-size: 1rem;
+   
+}
+
+.asesoramiento p {
+    margin: 0 10px;
+}
+
+
+
+
+

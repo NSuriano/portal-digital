@@ -1,21 +1,13 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
-}
-
-body {
-    width: 100%;
     font-family: "Monserrat", sans-serif;
-    height: auto;
-   
 }
+
+/*header*/
 
 header {
     display: flex;
@@ -28,13 +20,17 @@ header {
     font-size: 1.1rem;
     cursor: pointer;
     text-align: center;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    background: #f5f4f4; 
 
     .marca {
         display: flex;
         align-items: center;
-        gap: 25px;
+        gap: 20px;
         color: #15407c;
-        font-size: 1.2rem; 
+        font-size: 1.1rem; 
 
     }
 
@@ -45,7 +41,7 @@ header {
         
         a {
             color: #10256a; 
-            padding:  5px 17px;
+            padding:  5px 20px;
 
         }
     }
@@ -58,55 +54,16 @@ header {
     border-bottom: 2px solid darkcyan;
 }
 
-.container-inicio {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap:50px;
-}
 
-.titulo{
-margin-left: 100px;
-width: 40%;
+/*main*/
 
-
-h1 {
-    font-size: 2.7rem;
-    margin-bottom: 15px;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 500;
-    width: 80%;
-    margin-top: -130px;
-    text-align: center;
-    white-space: 8px;
-    color: #124d84;
-}
-
-
-h3 {
-    font-size: 1.2rem;
-    color: #1b3c62;
-    font-family: "Monserrat", sans-serif;
-    margin-top: 20px;
-}
-
-}
-
-
-.container-inicio img {
-    width: 100%;
-    height: 28%;
-    text-align: right;
-    margin-right: 20px;
- 
-}
 
 .plan {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color:#15407c;
     font-weight: bold;
-    margin-top: -20px;
+    margin-top: 150px;
    
 }
 
@@ -115,11 +72,16 @@ h3 {
     display: flex;
     justify-content: space-between;
     padding: 0 25px;
+
     h2 {
         text-align: center;
         margin: 50px 0 30px 0;
         
 
+    }
+
+    ul li {
+        font-size: 1.1rem;
     }
 
     div {
@@ -137,15 +99,21 @@ h3 {
             margin-top: 15px;
             font-size: 1.2rem;
         }
+
+        p {
+            text-align: justify;
+        }
+
+
     }
 }
 
 .personal {
-    background: #155a9a;
+    background: #13538f;
 }
 
 .landing {
-    background: rgb(40, 167, 199);
+    background: #2496b3;
 }
 
 .estandar {
@@ -153,7 +121,7 @@ h3 {
 }
 
 .premiun {
-    background:#cfa33d;
+    background:#c29939;
 }
 
 .titulo {
@@ -161,26 +129,71 @@ h3 {
     font-size: 1.5rem;
     color: #15407c;
     font-weight: bold;
-    margin: 80px auto;
+    margin: 90px auto 50px auto;
 }
 
 .caracteristicas {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
     width: 100%;
     height: 20vw;
-    background: lightgrey;
+    background: #f5f4f4;
     color: #3a384d;
+   
+  
+    
     
     h3 {
-        margin: 20px 0 30px 0;
+        margin: 20px 0;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    div {
+        width: 22%;
+        padding: 0 10px;
     }
 }
 
+/*extras*/
 
+.extras {
+    width: 50%;
+    height: 25vw;
+    padding: 20px;
+    margin:90px 0 50px 30px;
+    border: 1px solid #a4a1a1;
+    border-radius: 10px;
+    background: #79b5c5;
+    display: flex;
+    align-items: center;
 
+    p{
+        font-size: 1.2rem;
+    }
 
+    h2 {
+        color: #15407c;
+    }
 
+    span{
+        color: #15407c;
+        font-size: 1.4rem;
+    }
 
+    strong {
 
+    color: #15407c;
+    }
+}
+
+.extras img{
+    width: 40vw;
+    height:25vw;
+}
+
+/*footer*/
