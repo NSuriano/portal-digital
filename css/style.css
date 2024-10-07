@@ -192,25 +192,46 @@ h3 {
     padding: 30px;
     gap: 50px;
     justify-content: space-between;
+    
 
 }
 
 .incluir{
     text-align: center;
     color: #124d84;
-    margin-top: 130px;
+    margin: 150px 0 50px 0;
   
 }
 
 .beneficios,
 .asesoramiento {
     width: 45%;
-    height: 25vw;
+    height: 29vw;
     background-color: #d4e8fa;
     border-radius: 13px;
     position: relative;
+    color: #0b1844;
+    
+  
 
 
+}
+.asesoramiento p {
+    word-spacing: 3px;
+   
+}
+
+.beneficios ul li {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+
+    i{
+    font-size: 1.5rem;
+    color:  #285eba;
+    }
 }
 
 .final h3 {
@@ -220,28 +241,45 @@ h3 {
     padding: 15px 0;
     text-align: center;
     border-radius: 9px 9px 0 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+  
+  
 }
 
 
 .final button {
-    text-align: center;
-    padding: 10px 15px;
+    text-wrap:nowrap;
+    width: 12vw;
+    height: 3.5vw;
     bottom: 20px;
-    margin: 0 15vw;
+    margin: 0 13vw;
     position: absolute;
-    border-radius: 5px;
+    border-radius: 7px;
     border: none;
     background: #204a91;
-    flex-wrap: nowrap;
+    text-align: center;
+    cursor: pointer;
+
+    i{
+        font-size: 1.5rem;
+      
+       
+    }
+   
     
 }
+
+.final button:hover {
+    transform: scale(1.1);
+}
+
+
 
 .final button a {
     color: white;
     font-size: 1rem;
-   
-   
+  
+     
 }
 
 .asesoramiento p, 
