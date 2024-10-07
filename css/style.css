@@ -14,6 +14,7 @@ body {
     width: 100%;
     font-family: "Monserrat", sans-serif;
     height: auto;
+    background: #fafafa;
    
 }
 
@@ -134,7 +135,7 @@ h3 {
 }
 
 .motivos {
-    background-color: #f2f0f0;
+    background-color: #dce3ede0;
     height: 490px;
     padding-top: 50px;
     margin: 0 50px;
@@ -197,18 +198,18 @@ h3 {
 .incluir{
     text-align: center;
     color: #124d84;
-    margin-top: 110px;
+    margin-top: 130px;
   
 }
 
 .beneficios,
 .asesoramiento {
     width: 45%;
-    height: 23vw;
-    border: 2px solid #285eba;
+    height: 25vw;
+    background-color: #d4e8fa;
     border-radius: 13px;
     position: relative;
-   
+
 
 }
 
@@ -232,6 +233,7 @@ h3 {
     border-radius: 5px;
     border: none;
     background: #204a91;
+    flex-wrap: nowrap;
     
 }
 
@@ -239,10 +241,12 @@ h3 {
     color: white;
     font-size: 1rem;
    
+   
 }
 
-.asesoramiento p {
-    margin: 0 10px;
+.asesoramiento p, 
+.beneficios ul li {
+    margin: 0 15px;
 }
 
 
