@@ -32,7 +32,7 @@ header {
     position: fixed;
     z-index: 20;
     top: 0;
-    background: white;
+    background: #fafafa;
 
     .marca {
         display: flex;
@@ -58,12 +58,40 @@ header {
     
 }
 
+.marca img {
+    width: 60px;
+    height: 60px;
+}
+
 .encabezado a:hover {
     color:#027d7d;
-    border-bottom: 2px solid #008b8b;
+    border-bottom: 2px solid #60efe8;
 }
 
 /*main*/
+
+section {
+    animation: reveal linear 4s both;
+    animation-timeline: view();
+    animation-range: entry 30% 30%;
+   
+    
+}
+
+@keyframes reveal {
+    from {
+      
+        transform: translatex(-1150px);
+        transition: linear 4s;
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0);
+        transition: linear 4s;
+    }
+}
+
 
 .container-inicio {
     display: flex;
@@ -107,7 +135,7 @@ h3 {
     text-align: center;
     padding: 10px 20px;
     border-radius: 8px;
-    margin: 40px 20%;
+    margin: 40px 26%;
     border: none;
     background-color: #173250;
     filter: drop-shadow(5px 5px 5px #8080809c)
@@ -199,23 +227,23 @@ h3 {
 .incluir{
     text-align: center;
     color: #124d84;
-    margin: 150px 0 50px 0;
+    margin: 150px 0 10px 0;
   
 }
 
 .beneficios,
 .asesoramiento {
     width: 45%;
-    height: 29vw;
+    height: 27vw;
     background-color: #d4e8fa;
-    border-radius: 13px;
+    border-radius: 15px;
     position: relative;
     color: #0b1844;
-    
+    filter: drop-shadow(5px 5px 15px #80808090)
   
-
-
+    
 }
+
 .asesoramiento p {
     word-spacing: 3px;
    
@@ -238,10 +266,10 @@ h3 {
     background-color: #285eba;
     color: white;
     font-size: 1.2rem;
-    padding: 15px 0;
+    padding: 25px 0;
     text-align: center;
     border-radius: 9px 9px 0 0;
-    margin-bottom: 15px;
+    
   
   
 }
@@ -250,8 +278,8 @@ h3 {
 .final button {
     text-wrap:nowrap;
     width: 12vw;
-    height: 3.5vw;
-    bottom: 20px;
+    height: 3.2vw;
+    bottom: 18px;
     margin: 0 13vw;
     position: absolute;
     border-radius: 7px;
@@ -284,7 +312,39 @@ h3 {
 
 .asesoramiento p, 
 .beneficios ul li {
-    margin: 0 15px;
+    margin: 3px 15px;
+}
+
+.asesoramiento p {
+    line-height: 1.5;
+    word-spacing: 2.5px;
+}
+
+/*footer*/
+
+footer {
+    background: #0b1844;
+    width: 100%;
+    height: 12vw;
+    color: whitesmoke;
+    text-align: center;
+    padding: 3vw 0;
+    margin-top: 60vw;
+    line-height: 1.5;
+
+    img {
+        width: 30px;
+        height: 32px;
+    }
+    
+}
+
+span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    font-size: 1.2rem;
 }
 
 

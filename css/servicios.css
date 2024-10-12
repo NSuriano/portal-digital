@@ -12,7 +12,7 @@
 body {
     width: 100%;
     height: auto;
-    background-color: #fafafa; 
+    background: #fafafa;
 }
 
 header {
@@ -40,6 +40,11 @@ header {
 
     }
 
+    .marca img {
+        width: 60px;
+        height: 60px;
+    }
+
     .encabezado{
         display: flex;
         align-items: center;
@@ -56,8 +61,8 @@ header {
 }
 
 .encabezado a:hover {
-    color:rgb(2, 125, 125);
-    border-bottom: 2px solid darkcyan;
+    color:#027d7d;
+    border-bottom: 2px solid #60efe8;;
 }
 
 
@@ -78,6 +83,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 25px;
+    gap: 35px;
 
     h2 {
         text-align: center;
@@ -92,7 +98,7 @@ header {
 
     div {
         padding: 10px;
-        width: 23%;
+        width: 30%;
         height: 29vw;
         color:azure;
         margin-top: 60px;
@@ -121,10 +127,11 @@ header {
   
 }
 
-p i{
-    font-size: 1.5rem;
-    color: rgb(76, 182, 5);
+.planes p i {
+    font-size: 1rem;
+    color: white;
 }
+
 
 .personal {
     background: #13538f;
@@ -138,9 +145,6 @@ p i{
     background:#991047; 
 }
 
-.premiun {
-    background:#c29939;
-}
 
 .titulo {
     text-align: center;
@@ -190,6 +194,12 @@ p i{
     color: #15407c;
     }
 }
+
+.info p i{
+    font-size: 1.5rem;
+    color: #4cb605;
+}
+
 
 .extras img{
     width: 36vw;
