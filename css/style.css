@@ -15,6 +15,7 @@ body {
     font-family: "Monserrat", sans-serif;
     height: auto;
     background: #fafafa;
+    position: relative;
    
 }
 
@@ -68,10 +69,11 @@ header {
     border-bottom: 2px solid #60efe8;
 }
 
-/*main*/
 
+
+/*animacion scroll*/
 section {
-    animation: reveal linear 4s both;
+    animation: reveal linear 2s ;
     animation-timeline: view();
     animation-range: entry 30% 30%;
    
@@ -92,6 +94,8 @@ section {
     }
 }
 
+
+/*main*/
 
 .container-inicio {
     display: flex;
@@ -168,6 +172,8 @@ h3 {
     padding-top: 50px;
     margin: 0 50px;
     border-radius: 25px;
+
+   
 }
 
 .motivos h2 {
@@ -201,6 +207,7 @@ h3 {
         height: 35px;
         border-radius: 0;
         filter: none;
+     
     }
     
 }
@@ -217,8 +224,8 @@ h3 {
 .final {
     display: flex;
     width: 100%;
-    padding: 30px;
-    gap: 50px;
+    padding: 30px 70px;
+    gap: 10px;
     justify-content: space-between;
     
 
@@ -233,19 +240,21 @@ h3 {
 
 .beneficios,
 .asesoramiento {
-    width: 45%;
-    height: 27vw;
-    background-color: #d4e8fa;
+    width: 40%;
+    height: 32vw;
+    background-color: #e8f2fb;
     border-radius: 15px;
     position: relative;
     color: #0b1844;
-    filter: drop-shadow(5px 5px 15px #80808090)
-  
+    filter: drop-shadow(5px 5px 15px #80808090);
+    font-size: 1.1rem;
+    margin-top: -30px;
     
 }
 
 .asesoramiento p {
     word-spacing: 3px;
+    line-height: 2;
    
 }
 
@@ -258,7 +267,7 @@ h3 {
 
     i{
     font-size: 1.5rem;
-    color:  #285eba;
+    color:  #28ef28;
     }
 }
 
@@ -280,17 +289,18 @@ h3 {
     width: 12vw;
     height: 3.2vw;
     bottom: 18px;
-    margin: 0 13vw;
+    margin: 0 9vw;
     position: absolute;
     border-radius: 7px;
     border: none;
     background: #204a91;
     text-align: center;
     cursor: pointer;
+    filter: drop-shadow(5px 5px 15px #80808090);
 
     i{
         font-size: 1.5rem;
-      
+        
        
     }
    
@@ -312,12 +322,35 @@ h3 {
 
 .asesoramiento p, 
 .beneficios ul li {
-    margin: 3px 15px;
+    margin: 5px 15px;
 }
 
 .asesoramiento p {
     line-height: 1.5;
     word-spacing: 2.5px;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 10px;
+    
+    animation: none;
+    background: #dddcdc;
+    border-radius: 15px;
+    z-index: 20;
+
+    i{
+    font-size: 2.3rem;
+    color: #28ef28;
+    }
+
+    a{
+        font-size: 1.3rem;
+        color:#18338c;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+    }
 }
 
 /*footer*/

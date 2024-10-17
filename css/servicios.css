@@ -99,23 +99,24 @@ header {
     div {
         padding: 10px;
         width: 30%;
-        height: 29vw;
+        height: 25vw;
         color:azure;
         margin-top: 60px;
         border-radius: 10px;
         position: relative;
         padding: 0 20px;
-        filter: drop-shadow(5px 5px 7px #80808094);
+        filter: drop-shadow(5px 5px 7px #808080ac);
+        font-size: 1.2rem;
 
         h3 {
           
-            margin-top: 15px;
+            margin-top: 30px;
             font-size: 1.2rem;
         }
 
         p {
             text-align: justify;
-            margin-bottom: 5px;
+            margin-bottom: 13px;
         }
 
         ul{
@@ -132,6 +133,21 @@ header {
     color: white;
 }
 
+.planes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: white;
+    padding: 10px 15px;
+
+}
+
+.planes a:hover {
+    background-color: #cac8c8;
+    color:  #13538f;
+    border-radius: 7px;
+}
 
 .personal {
     background: #13538f;
