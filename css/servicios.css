@@ -236,6 +236,13 @@ width: 39%;
    
 }
 
+.subtitulos {
+    text-align: center;
+    color:#15407c;
+    margin: 100px auto;
+    font-size: 1.8rem;
+}
+
 
 
 /*footer*/

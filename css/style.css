@@ -1,6 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
+
+:root {
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    --total: polygon(0 0, 100% 0, 100% 99%, 0% 100%);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -71,30 +78,6 @@ header {
 
 
 
-/*animacion scroll*/
-section {
-    animation: reveal linear 2s ;
-    animation-timeline: view();
-    animation-range: entry 30% 30%;
-   
-    
-}
-
-@keyframes reveal {
-    from {
-      
-        transform: translatex(-1150px);
-        transition: linear 4s;
-    }
-
-    to {
-        opacity: 1;
-        transform: translatex(0);
-        transition: linear 4s;
-    }
-}
-
-
 /*main*/
 
 .container-inicio {
@@ -104,6 +87,7 @@ section {
     gap:70px;
     margin-top: 100px;
     flex-wrap: nowrap;
+    margin-bottom: 40px;
 }
 
 .titulo{
@@ -122,7 +106,7 @@ h1 {
     white-space: 8px;
     color: #124d84;
 }
-
+}
 
 h3 {
     font-size: 1rem;
@@ -133,17 +117,46 @@ h3 {
 
 }
 
-}
+
 
 .titulo button {
+    position: relative;
     text-align: center;
-    padding: 10px 20px;
+    text-wrap: nowrap;
+    padding: 13px 25px;
     border-radius: 8px;
-    margin: 40px 26%;
+    margin: 40px 20%;
     border: none;
     background-color: #173250;
-    filter: drop-shadow(5px 5px 5px #8080809c)
+    filter: drop-shadow(5px 5px 5px #8080809c);
+    cursor: pointer;
+   
+     
 }
+
+.titulo button::before {
+    content: "";
+    display: block;
+    background-color: #0d6980; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    z-index: -1;
+    clip-path: var(--clippy);
+    transition-property: clip-path;
+    transition: ease 700ms;
+}
+
+.titulo button:hover::before {
+    
+    text-wrap: nowrap;
+    clip-path: var(--total);      
+    
+}
+
 
 .titulo button a {
     color: white;
@@ -152,11 +165,10 @@ h3 {
    
 }
  
-.titulo button:hover {
-    transform: scale(1.1);
-    border :2px solid #6bf0e9;
-}
 
+
+
+ 
 
 .container-inicio img {
     width: 90%;
@@ -167,12 +179,11 @@ h3 {
 }
 
 .motivos {
-    background-color: #dce3ede0;
-    height: 490px;
-    padding-top: 50px;
-    margin: 0 50px;
-    border-radius: 25px;
-
+    background-color: #dce3edc1;
+    height: 530px;
+    padding-top: 70px;
+    width: 100%;
+    margin-bottom: 30px;
    
 }
 
@@ -186,7 +197,7 @@ h3 {
 
 .lista {
     display: flex;
-    gap: 70px;
+    gap: 85px;
     font-size: 1.2rem;
     line-height: 4;
     color: #173250;
@@ -207,6 +218,7 @@ h3 {
         height: 35px;
         border-radius: 0;
         filter: none;
+      
      
     }
     
@@ -216,8 +228,8 @@ h3 {
     width: 360px;
     height: 300px;
     border-radius: 50px 0 50px 0;
-    filter: drop-shadow(10px 10px 10px #808080b7)
-       
+    filter: drop-shadow(10px 10px 10px #808080b7);
+   
 
 }
 
@@ -234,7 +246,7 @@ h3 {
 .incluir{
     text-align: center;
     color: #124d84;
-    margin: 150px 0 10px 0;
+    margin: 150px 0 20px 0;
   
 }
 
@@ -248,7 +260,7 @@ h3 {
     color: #0b1844;
     filter: drop-shadow(5px 5px 15px #80808090);
     font-size: 1.1rem;
-    margin-top: -30px;
+    
     
 }
 
@@ -289,7 +301,7 @@ h3 {
     width: 12vw;
     height: 3.2vw;
     bottom: 18px;
-    margin: 0 9vw;
+    margin: 0 12vw;
     position: absolute;
     border-radius: 7px;
     border: none;
@@ -331,27 +343,69 @@ h3 {
 }
 
 .whatsapp {
+  
     position: fixed;
-    right: 10px;
-    
+    right: 15px;
+    bottom: 40px;
     animation: none;
-    background: #dddcdc;
-    border-radius: 15px;
     z-index: 20;
 
     i{
-    font-size: 2.3rem;
+    font-size: 2.8rem;
     color: #28ef28;
+          
     }
 
+   
+
     a{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color:#18338c;
         display: flex;
         align-items: center;
-        padding: 10px 15px;
+        padding: 5px 5px;
+        
+               
     }
 }
+
+
+
+.whatsapp:hover {
+    transform: scale(1.1);
+
+}
+
+/*personalizacion de title*/
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+
+[data-title]:after {
+    content: attr(data-title);
+    background-color: #fbf8f8;
+    color: #180562;
+    font-size: 17px;
+    position: absolute;
+    padding: 12px 7px;
+    right: 4vw;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #666565a8;
+    opacity: 0;
+    border: none;
+    z-index: 99999;
+    visibility: hidden;
+    border-radius: 25px;
+    
+}
+
+[data-title] {
+    position: relative;
+}
+
 
 /*footer*/
 
@@ -362,7 +416,7 @@ footer {
     color: whitesmoke;
     text-align: center;
     padding: 3vw 0;
-    margin-top: 60vw;
+    margin-top: 10vw;
     line-height: 1.5;
 
     img {
