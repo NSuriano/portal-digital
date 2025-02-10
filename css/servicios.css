@@ -83,7 +83,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 25px;
-    gap: 35px;
+    gap: 30px;
 
     h2 {
         text-align: center;
@@ -95,18 +95,25 @@ header {
     ul li {
         font-size: 1.1rem;
     }
+}    
 
-    div {
+.profesional, 
+.landing,
+.institucional {
         padding: 10px;
         width: 30%;
-        height: 25vw;
-        color:azure;
+        height: 32vw;
+        color: white;
         margin-top: 60px;
         border-radius: 10px;
         position: relative;
         padding: 0 20px;
         filter: drop-shadow(5px 5px 7px #808080ac);
         font-size: 1.2rem;
+}
+
+.descripcion {
+
 
         h3 {
           
@@ -115,7 +122,7 @@ header {
         }
 
         p {
-            text-align: justify;
+            
             margin-bottom: 13px;
         }
 
@@ -123,33 +130,43 @@ header {
             margin: 10px 0;
         }
 
+}
+
+.contratar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+
+    button {
+        background: #F5F5F5;
+        width: 100%;
+        height: 5.5vw;
+        color: #13538f;
+        border-radius: 0 0 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+        text-align: center;      
+               
     }
+}    
 
   
-}
+
 
 .planes p i {
     font-size: 1rem;
     color: white;
 }
 
-.planes a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    color: white;
-    padding: 10px 15px;
 
-}
-
-.planes a:hover {
-    background-color: #cac8c8;
-    color:  #13538f;
-    border-radius: 7px;
-}
-
-.personal {
+.profesional{
     background: #13538f;
 }
 
@@ -157,9 +174,10 @@ header {
     background: #2496b3;
 }
 
-.estandar {
+.institucional {
     background:#991047; 
 }
+
 
 
 .titulo {
@@ -173,75 +191,6 @@ header {
 
 
 /*extras*/
-
-.extras {
-    width: 90%;
-    height: 27vw;
-    padding: 20px;
-    margin:90px auto 50px auto;
-    border: 1px solid #bebdbd;
-    border-radius: 10px;
-    gap: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #c9e1f8;
-    filter: drop-shadow(5px 5px 7px #80808094);
-    cursor: pointer;
-
-    p{
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-        color: #08112f;
-    }
-
-    h2 {
-        color: #15407c;
-        margin-bottom: 8px;
-    }
-
-    span{
-        color: #15407c;
-        font-size: 1.4rem;
-    }
-
-    strong {
-
-    color: #15407c;
-    }
-}
-
-.info p i{
-    font-size: 1.5rem;
-    color: #4cb605;
-}
-
-
-.extras img{
-    width: 36vw;
-    height:26.9vw;
-    object-fit: cover;
-    border-radius: 0 10px 10px 0;
-    margin-top: 3px;
-   
-}
-
-.imagen {
-width: 39%;
-}
-
-
-.info {
-    width: 55%;
-   
-}
-
-.subtitulos {
-    text-align: center;
-    color:#15407c;
-    margin: 100px auto;
-    font-size: 1.8rem;
-}
 
 
 

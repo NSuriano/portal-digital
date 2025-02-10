@@ -45,9 +45,15 @@ header {
     .marca {
         display: flex;
         align-items: center;
-        gap: 20px;
+        text-align: left;
+        gap: 5px;
         color: #15407c;
-        font-size: 1.1rem; 
+        
+        text-wrap: nowrap;
+
+        h3 {
+            font-size: 1.3rem; 
+        }
 
     }
 
@@ -67,8 +73,8 @@ header {
 }
 
 .marca img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 .encabezado a:hover {
@@ -84,36 +90,38 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap:70px;
-    margin-top: 100px;
+    margin-top: 90px;
     flex-wrap: nowrap;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .titulo{
-margin-left: 100px;
-width: 40%;
+margin: 50px auto;
+width: 50%;
+
 
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-bottom: 15px;
     font-family: "Archivo Black", sans-serif;
     font-weight: 500;
-    width: 100%;
-    margin-top: -30px;
+    width: 60%;
+    margin: 0 auto;
     text-align: center;
     white-space: 8px;
     color: #124d84;
-}
+   }
 }
 
 h3 {
     font-size: 1rem;
     color: #1b3c62;
     font-family: "Monserrat", sans-serif;
-    margin-top: 20px;
+    margin: 30px auto;
     text-align: center;
+    width: 60%;
 
 }
 
@@ -125,7 +133,7 @@ h3 {
     text-wrap: nowrap;
     padding: 13px 25px;
     border-radius: 8px;
-    margin: 40px 20%;
+    margin: 20px 20%;
     border: none;
     background-color: #173250;
     filter: drop-shadow(5px 5px 5px #8080809c);
@@ -134,7 +142,7 @@ h3 {
      
 }
 
-.titulo button::before {
+.titulo button::before, .asesoramiento .boton::before {
     content: "";
     display: block;
     background-color: #0d6980; 
@@ -150,7 +158,7 @@ h3 {
     transition: ease 700ms;
 }
 
-.titulo button:hover::before {
+.titulo button:hover::before, .asesoramiento .boton:hover::before {
     
     text-wrap: nowrap;
     clip-path: var(--total);      
@@ -158,7 +166,7 @@ h3 {
 }
 
 
-.titulo button a {
+.titulo button a, .asesoramiento .boton a {
     color: white;
     padding: 10px 20px;
     font-size: 1rem;
@@ -166,14 +174,15 @@ h3 {
 }
  
 
-
-
- 
+ .imagen {
+    width: 60%;
+ }
 
 .container-inicio img {
     width: 90%;
-    height: 45%;
-    text-align: right;
+    height: 60%;
+    text-align: center;
+    margin-right: 100px;
    
  
 }
@@ -233,114 +242,96 @@ h3 {
 
 }
 
-.final {
-    display: flex;
-    width: 100%;
-    padding: 30px 70px;
-    gap: 10px;
-    justify-content: space-between;
-    
-
-}
 
 .incluir{
     text-align: center;
     color: #124d84;
-    margin: 150px 0 20px 0;
+    margin: 100px 0 20px 0;
   
 }
 
-.beneficios,
+.beneficios{
+    margin-top: 90px;
+
+    ul {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px auto;
+        font-size: 1.1rem;
+        color: #173250;
+        line-height: 1;
+        text-align: center;
+
+        li{
+            display: block;
+            text-align: center;
+            width: 25%;
+            height: 15vw;
+            border: 1px solid gray;
+            border-radius: 7px;
+            box-shadow: 5px 5px 5px#c9c6c6;
+
+            img{
+                display: block;
+                text-align: center;
+                margin: 10px auto;
+            }
+
+        }
+    }
+
+}
+
+.titulo{
+text-align: center;
+color: #124d84;
+margin: 30px auto;
+
+}
+
 .asesoramiento {
-    width: 40%;
-    height: 32vw;
-    background-color: #e8f2fb;
-    border-radius: 15px;
-    position: relative;
-    color: #0b1844;
-    filter: drop-shadow(5px 5px 15px #80808090);
-    font-size: 1.1rem;
-    
-    
-}
-
-.asesoramiento p {
-    word-spacing: 3px;
-    line-height: 2;
-   
-}
-
-.beneficios ul li {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    line-height: 1.7;
-    letter-spacing: 1px;
-
-    i{
-    font-size: 1.5rem;
-    color:  #28ef28;
-    }
-}
-
-.final h3 {
-    background-color: #285eba;
-    color: white;
+    background-color: #dce3edc1;
+    height: 45vw;
+    padding-top: 70px;
+    width: 100%;
+    padding: 30px 60px;
     font-size: 1.2rem;
-    padding: 25px 0;
-    text-align: center;
-    border-radius: 9px 9px 0 0;
-    
-  
-  
-}
+    space-between: 20px;
+    margin-top: 60px;
 
-
-.final button {
-    text-wrap:nowrap;
-    width: 12vw;
-    height: 3.2vw;
-    bottom: 18px;
-    margin: 0 12vw;
-    position: absolute;
-    border-radius: 7px;
-    border: none;
-    background: #204a91;
-    text-align: center;
-    cursor: pointer;
-    filter: drop-shadow(5px 5px 15px #80808090);
-
-    i{
-        font-size: 1.5rem;
-        
-       
+    p {
+        margin-top: 20px;
+        color: #173250;
+        text-align: left;
     }
-   
-    
+
+    .strong {
+        text-align: center;
+    }
+
+    a {
+        color: #173250;
+        font-weight: 600;
+    }
+
+    button {
+        position: relative;
+        text-align: center;
+        align-items: center;
+        text-wrap: nowrap;
+        padding: 13px 25px;
+        border-radius: 8px;
+        margin: 50px 36%;
+        border: none;
+        background-color: #173250;
+        filter: drop-shadow(5px 5px 5px #8080809c);
+        cursor: pointer;
+    }
 }
 
-.final button:hover {
-    transform: scale(1.1);
-}
-
-
-
-.final button a {
-    color: white;
-    font-size: 1rem;
-  
-     
-}
-
-.asesoramiento p, 
-.beneficios ul li {
-    margin: 5px 15px;
-}
-
-.asesoramiento p {
-    line-height: 1.5;
-    word-spacing: 2.5px;
-}
 
 .whatsapp {
   
@@ -351,7 +342,7 @@ h3 {
     z-index: 20;
 
     i{
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: #28ef28;
           
     }
@@ -416,7 +407,6 @@ footer {
     color: whitesmoke;
     text-align: center;
     padding: 3vw 0;
-    margin-top: 10vw;
     line-height: 1.5;
 
     img {
